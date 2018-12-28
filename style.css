@@ -11,6 +11,12 @@ p {
   padding-top: 10px;
   margin: 0px;
 }
+h1 {
+  font-size: 12pt;
+  font-weight: bold;
+  padding-top: 15px;
+  margin: 0;
+}
 
 table.navbar {
   font-size: 8pt;
