@@ -24,7 +24,6 @@ table.menu {
   font-size: 8pt;
   margin: 0px;
   padding: 0px;
-
   font-weight: bold;
 }
 td.menuNormal {
@@ -32,14 +31,14 @@ td.menuNormal {
   color: white;
   font-weight: bold;
   vertical-align: top;
-  background-color: #0000ff;
+  background-color: #fc3c02;
 }
 td.menuNormal {
   padding: 0px;
   color: black;
   font-weight: bold;
   vertical-align: top;
-  background-color: lightBlue;
+  background-color: f8cb91;
 }
 div.menuNormal {
   display: none;
@@ -47,7 +46,7 @@ div.menuNormal {
 }
 div.menuHover {
   border: 2.5px solid white;
-  background-color: #0000ff;
+  background-color: #fc3c02;
   display: inline;
   position: absolute;
 }
@@ -56,7 +55,7 @@ a.menuitem :visited {
   text-decoration: none;
   color: white;
   padding: 2.5px;
-  background-color: #0000ff;
+  background-color: #fc3c02;
   border-bottom: 2.5px solid white;
   display: block;
 }
@@ -64,7 +63,7 @@ a.menuitem :hover {
   text-decoration: none;
   color: black;
   padding: 2.5px;
-  background-color: lightblue;
+  background-color: #f8cb91;
   border-bottom: 2.5px solid white;
   display: block;
 }
@@ -72,7 +71,7 @@ a.menuitem :active {
   text-decoration: none;
   color: black;
   padding: 2.5px;
-  background-color: lightblue;
+  background-color: f8cb91;
   border-bottom: 2.5px solid white;
   display: block;
 }

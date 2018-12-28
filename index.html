@@ -1,206 +1,465 @@
-<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd”>
+<!DOCTYPE html PUBLIC “-//W3C//DTD HTML 4.01//EN “http://www.w3.org/TR/html4/strict.dtd>
 <html>
   <head>
-		<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″>
+    <meta http-equiv=Content-Type content=text/html; charset=UTF-8″>
     <title>Website Layout</title>
     <link rel="stylesheet" href="style.css" />
-	<script language="javascript" src="main.js"></script>
-	<style>
+    <script language="javascript" src="main.js"></script>
+    <style>
+      body {
+        background-color: #fff;
+      }
 
- 
+      #header {
+        background-color: #f15c57;
 
-			body {
-			
-			background-color: #FFF;
-			
-			}
-			
-			 
-			
-			#header {
-			
-			background-color: #006;
-			
-			color: #FFF;
-			
-			padding: 20px;
-			
-			}
-			
-			 
-			
-			#footer {
-			
-			background-color: #006;
-			
-			color: #FFF;
-			
-			padding: 20px;
-			
-			}
-			
-			 
-			
-			#lypsum {
-			
-			padding: 15px;
-			
-			background-color: #FAF0E6;
-			
-			margin-right: 220px;
-			
-			margin-top: 5px;
-			
-			}
-			
-			 
-			
-			#brain2 {
-			
-			padding: 5px;
-			
-			padding-bottom: 15px;
-			
-			border-width: 2px;
-			
-			border-style: dotted;
-			
-			border-color: #4682B4;
-			
-			background-color: #E0FFFF;
-			
-			width: 200px;
-			
-			text-align: center;
-			
-			float: right;
-			
-			margin-left: 10px;
-			
-			margin-right: 5px;
-			
-			margin-top: 5px;
-			
-			}
-			
-			</style>
+        color: #fff;
+
+        padding: 20px;
+      }
+
+      #footer {
+        background-color: #f15c57;
+
+        color: #fff;
+
+        padding: 20px;
+      }
+
+      #lypsum {
+        padding: 15px;
+
+        background-color: #faf0e6;
+
+        margin-right: 220px;
+
+		margin-top: 5px;
+		text-align: justify;
+      }
+
+      #brain2 {
+        padding: 5px;
+
+        padding-bottom: 15px;
+
+        border-width: 2px;
+
+        border-style: dotted;
+
+        border-color: #4682b4;
+
+        background-color: #e0ffff;
+
+        width: 200px;
+
+        text-align: center;
+
+        float: right;
+
+        margin-left: 10px;
+
+        margin-right: 5px;
+
+        margin-top: 5px;
+      }
+    </style>
   </head>
   <body>
-	  <div id="menu">
-		  <table class="navbar" width="800">
+    <div id="header"><h2>Bara de titlu</h2></div>
+
+    <div id="menu">
+      <!– Un dropdown menu creat folosind un tabel numit navbar cu latimea de 1000 pixels –>
+
+      <table class="navbar" width="1000">
+        <tr>
+          <!– Creez prima coloana din tabel si ii atribui atributele css assigned to “menuNormal. 
+		Definesc latimea de 160 pixels. Declansez functiile JS pe evenimentele: onmouseover si onmouseout. –>
+
+          <td
+            class=menuNormal"
+            width="160″
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <!– menu item din partea de sus a ecranului –>
+
+            <p>Menu 1</p>
+
+			<!– Fiecare menu vertical este continut intr-un element div imbricat in interiorul unui element TD la nivelul de sus. 
+			Aici este un tabel imbricat in interiorul fiecarui div.
+			Cand evenimentul onmouseover este declansat atributul divului afisat comutat de la none 
+			la inline ceea ce permite vizitatorului  sa vada div0ul pe ecran –>
+
+            <div class="menuNormal" width="155">
+              <table class="menu" width="155">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.html" class="menuitem">Paragraful 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.html" class="menuitem">Paragraful 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.html" class="menuitem">Paragraful 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.html" class="menuitem">Paragraful 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 2</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 3</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 4</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 5</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 6</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+		  <td
+		  class="menuNormal"
+		  width="160″"
+		  onmouseover="expand(this);"
+		  onmouseout="collapse(this);"
+		>
+		  <p>Menu 7</p>
+
+		  <div class="menuNormal" width="155″">
+			<table class="menu" width="155″">
 			  <tr>
-				  <td class="menuNormal" width = "160" 
-				  onmouseover="expand(this)" onmouseout="collapse(this);">
-				<p>Menu 1</p>
-				<div class="menuNormal" width="155">
-					<table class="menu" width="155">
-						<tr><td class="menuNormal">
-							<a href="page.html" class="menuitem">Item1</a>
-						</rd></tr>
-						<tr><td class="menuNormal">
-							<a href="page.html" class="menuitem">Item1</a>
-						</rd></tr>
-						<tr><td class="menuNormal">
-							<a href="page.html" class="menuitem">Item1</a>
-						</rd></tr>
-						<tr><td class="menuNormal">
-								<a href="page.html" class="menuitem">Item1</a>
-							</rd></tr>
-					</table>
-
-
-				</div>
+				<td class="menuNormal">
+				  <a href="page.htm" class="menuitem">Item 1</a>
 				</td>
-				<td class="menuNormal" width = "160" 
-				onmouseover="expand(this)" onmouseout="collapse(this);">
-			  <p>Menu 1</p>
-			  <div class="menuNormal" width="155">
-				  <table class="menu" width="155">
-					  <tr><td class="menuNormal">
-						  <a href="page.html" class="menuitem">Item1</a>
-					  </rd></tr>
-					  <tr><td class="menuNormal">
-						  <a href="page.html" class="menuitem">Item1</a>
-					  </rd></tr>
-					  <tr><td class="menuNormal">
-						  <a href="page.html" class="menuitem">Item1</a>
-					  </rd></tr>
-					  <tr><td class="menuNormal">
-							  <a href="page.html" class="menuitem">Item1</a>
-						  </rd></tr>
-				  </table>
-
-
-			  </div>
-			  </td>
-			  <td class="menuNormal" width = "160" 
-			  onmouseover="expand(this)" onmouseout="collapse(this);">
-			<p>Menu 1</p>
-			<div class="menuNormal" width="155">
-				<table class="menu" width="155">
-					<tr><td class="menuNormal">
-						<a href="page.html" class="menuitem">Item1</a>
-					</rd></tr>
-					<tr><td class="menuNormal">
-						<a href="page.html" class="menuitem">Item1</a>
-					</rd></tr>
-					<tr><td class="menuNormal">
-						<a href="page.html" class="menuitem">Item1</a>
-					</rd></tr>
-					<tr><td class="menuNormal">
-							<a href="page.html" class="menuitem">Item1</a>
-						</rd></tr>
-				</table>
-
-
-			</div>
-			</td>
-			<td class="menuNormal" width = "160" 
-			onmouseover="expand(this)" onmouseout="collapse(this);">
-		  <p>Menu 1</p>
-		  <div class="menuNormal" width="155">
-			  <table class="menu" width="155">
-				  <tr><td class="menuNormal">
-					  <a href="page.html" class="menuitem">Item1</a>
-				  </rd></tr>
-				  <tr><td class="menuNormal">
-					  <a href="page.html" class="menuitem">Item1</a>
-				  </rd></tr>
-				  <tr><td class="menuNormal">
-					  <a href="page.html" class="menuitem">Item1</a>
-				  </rd></tr>
-				  <tr><td class="menuNormal">
-						  <a href="page.html" class="menuitem">Item1</a>
-					  </rd></tr>
-			  </table>
-
-
-		  </div>
-		  </td>
-		  <td class="menuNormal" width = "160" 
-		  onmouseover="expand(this)" onmouseout="collapse(this);">
-		<p>Menu 1</p>
-		<div class="menuNormal" width="155">
-			<table class="menu" width="155">
-				<tr><td class="menuNormal">
-					<a href="page.html" class="menuitem">Item1</a>
-				</rd></tr>
-				<tr><td class="menuNormal">
-					<a href="page.html" class="menuitem">Item1</a>
-				</rd></tr>
-				<tr><td class="menuNormal">
-					<a href="page.html" class="menuitem">Item1</a>
-				</rd></tr>
-				<tr><td class="menuNormal">
-						<a href="page.html" class="menuitem">Item1</a>
-					</rd></tr>
-			</table>
-
-
-		</div>
-		</td>
 			  </tr>
-		  </table>
-	  </div>
+
+			  <tr>
+				<td class="menuNormal">
+				  <a href="page.htm" class="menuitem">Item 2</a>
+				</td>
+			  </tr>
+
+			  <tr>
+				<td class="menuNormal">
+				  <a href="page.htm" class="menuitem">Item 3</a>
+				</td>
+			  </tr>
+
+			  <tr>
+				<td class="menuNormal">
+				  <a href="page.htm" class="menuitem">Item 4</a>
+				</td>
+			  </tr>
+			</table>
+		  </div>
+		</td>
+          <td
+            class="menuNormal"
+            width="160″"
+            onmouseover="expand(this);"
+            onmouseout="collapse(this);"
+          >
+            <p>Menu 8</p>
+
+            <div class="menuNormal" width="155″">
+              <table class="menu" width="155″">
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 1</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 2</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 3</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="menuNormal">
+                    <a href="page.htm" class="menuitem">Item 4</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="brain2">
+      <h3>What a Brain</h3>
+
+      <p>
+        <img
+        src=http://www.newthinktank.com/wp-content/uploads/2010/03/LittleBrain.png
+        alt=Picture of Blue Brain />
+      </p>
+
+      <p>
+        Style a div element. 
+      </p>
+
+      <p>
+			Style a div element. 
+      </p>
+
+      <p>
+			Style a div element. 
+      </p>
+
+      <p>
+			Style a div element. 
+      </p>
+    </div>
+
+    <div id="lypsum">
+      <h3>Just Some Random Text</h3>
+
+      <p text-align: justify>
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system, and expound the actual teachings of the great
+        explorer of the truth, the master-builder of human happiness. No one
+        rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+        but because those who do not know how to pursue pleasure rationally
+        encounter consequences that are extremely painful. Nor again is there
+        anyone who loves or pursues or desires to obtain pain of itself, because
+        it is pain, but because occasionally circumstances occur in which toil
+        and pain can procure him some great pleasure. To take a trivial example,
+        which of us ever undertakes laborious physical exercise, except to
+        obtain some advantage from it? But who has any right to find fault with
+        a man who chooses to enjoy a pleasure that has no annoying consequences,
+        or one who avoids a pain that produces no resultant pleasure?
+      </p>
+
+      <p>
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system, and expound the actual teachings of the great
+        explorer of the truth, the master-builder of human happiness. No one
+        rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+        but because those who do not know how to pursue pleasure rationally
+        encounter consequences that are extremely painful. Nor again is there
+        anyone who loves or pursues or desires to obtain pain of itself, because
+        it is pain, but because occasionally circumstances occur in which toil
+        and pain can procure him some great pleasure. To take a trivial example,
+        which of us ever undertakes laborious physical exercise, except to
+        obtain some advantage from it? But who has any right to find fault with
+        a man who chooses to enjoy a pleasure that has no annoying consequences,
+        or one who avoids a pain that produces no resultant pleasure?
+      </p>
+
+      <p>
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasure and praising pain was born and I will give you a complete
+        account of the system, and expound the actual teachings of the great
+        explorer of the truth, the master-builder of human happiness. No one
+        rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+        but because those who do not know how to pursue pleasure rationally
+        encounter consequences that are extremely painful. Nor again is there
+        anyone who loves or pursues or desires to obtain pain of itself, because
+        it is pain, but because occasionally circumstances occur in which toil
+        and pain can procure him some great pleasure. To take a trivial example,
+        which of us ever undertakes laborious physical exercise, except to
+        obtain some advantage from it? But who has any right to find fault with
+        a man who chooses to enjoy a pleasure that has no annoying consequences,
+        or one who avoids a pain that produces no resultant pleasure?
+      </p>
+    </div>
+
+    <div id="footer"><h2>This is the Footer</h2></div>
   </body>
 </html>
