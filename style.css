@@ -1,0 +1,78 @@
+body {
+  font-family: verdana, tahoma, Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0px;
+}
+
+p {
+  padding-top: 10px;
+  margin: 0px;
+}
+
+table.navbar {
+  font-size: 8pt;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: bold;
+}
+
+table.menu {
+  font-size: 8pt;
+  margin: 0px;
+  padding: 0px;
+
+  font-weight: bold;
+}
+td.menuNormal {
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  vertical-align: top;
+  background-color: #0000ff;
+}
+td.menuNormal {
+  padding: 0px;
+  color: black;
+  font-weight: bold;
+  vertical-align: top;
+  background-color: lightBlue;
+}
+div.menuNormal {
+  display: none;
+  position: static;
+}
+div.menuHover {
+  border: 2.5px solid white;
+  background-color: #0000ff;
+  display: inline;
+  position: absolute;
+}
+
+a.menuitem :visited {
+  text-decoration: none;
+  color: white;
+  padding: 2.5px;
+  background-color: #0000ff;
+  border-bottom: 2.5px solid white;
+  display: block;
+}
+a.menuitem :hover {
+  text-decoration: none;
+  color: black;
+  padding: 2.5px;
+  background-color: lightblue;
+  border-bottom: 2.5px solid white;
+  display: block;
+}
+a.menuitem :active {
+  text-decoration: none;
+  color: black;
+  padding: 2.5px;
+  background-color: lightblue;
+  border-bottom: 2.5px solid white;
+  display: block;
+}
